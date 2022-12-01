@@ -24,8 +24,6 @@ struct ContentView: View {
                 Text("Ingresar")
             })
         }.padding()
-
-        
         
     }
     
