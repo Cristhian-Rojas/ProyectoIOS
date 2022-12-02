@@ -9,15 +9,50 @@ import SwiftUI
 import FirebaseAuth
 
 struct ProductView: View {
+    @ObservedObject var productVM = ProductVM()
     var body: some View {
-        Text("productos")
+        
+        
+        
+            List(productVM.products){ product in
+                
+                HStack{
+                    
+                    FirebaseImage(id: product.image)
+                        .frame(width: 5,height: 2)
+                        .padding(.horizontal,30)
+                    Spacer()
+                    
+                    VStack{
+                            Text(product.name).font(.title)
+                            Text(product.price).font(.caption)
+                        
+                    }
+                    .padding()
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Image(systemName: "plus")
+                            .padding(10)
+                            .foregroundColor(.white)
+                            .background(.black)
+                            .cornerRadius(50)
+                    })
+                }
+            }
+            .onAppear(){
+                self.productVM.getData()
+                
+            }
+        
         
         Button(action: {
-            self.logout()
-        }, label: {Text("Cerrar Sesion")})
+                self.logout()
+            }, label: {Text("Cerrar Sesion")})
+            
         
     }
-    
     func logout()  {
         do {
             try Auth.auth().signOut()
