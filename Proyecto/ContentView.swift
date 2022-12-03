@@ -14,7 +14,10 @@ struct ContentView: View {
     var body: some View {
         
         if self.loginVM.isLoggedin{
-            ProductView()
+            
+                ProductView()
+            
+            
         }else{
             
             LoginView()

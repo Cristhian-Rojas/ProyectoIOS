@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		396687F4293A8B5A0087D0DC /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396687F3293A8B5A0087D0DC /* CartView.swift */; };
 		3968354A29393224007EF892 /* ProyectoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3968354929393224007EF892 /* ProyectoApp.swift */; };
 		3968354C29393224007EF892 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3968354B29393224007EF892 /* ContentView.swift */; };
 		3968354E29393225007EF892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3968354D29393225007EF892 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		396687F3293A8B5A0087D0DC /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		3968354629393224007EF892 /* Proyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3968354929393224007EF892 /* ProyectoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoApp.swift; sourceTree = "<group>"; };
 		3968354B29393224007EF892 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				39683561293962A0007EF892 /* LoginView.swift */,
 				3968356829396638007EF892 /* ProductView.swift */,
+				396687F3293A8B5A0087D0DC /* CartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				396687F4293A8B5A0087D0DC /* CartView.swift in Sources */,
 				3968356929396638007EF892 /* ProductView.swift in Sources */,
 				39683567293963D2007EF892 /* LoginVM.swift in Sources */,
 				39683562293962A0007EF892 /* LoginView.swift in Sources */,

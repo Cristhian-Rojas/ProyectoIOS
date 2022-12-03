@@ -25,6 +25,10 @@ struct ProductView: View {
             })
             
         }
+        
+        
+        
+     
                 List(productVM.products){ product in
                     
                     HStack{
@@ -42,7 +46,7 @@ struct ProductView: View {
                         .padding()
                         
                         Button(action: {
-                            
+                          
                         }, label: {
                             Image(systemName: "plus")
                                 .padding(10)
@@ -54,9 +58,12 @@ struct ProductView: View {
                 }
                 .onAppear(){
                     self.productVM.getData()
-                    
                 }
-         
+            
+        
+            
+            
+        
      
         
         Button(action: {
